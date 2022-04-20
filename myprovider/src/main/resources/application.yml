@@ -1,0 +1,12 @@
+
+server:
+  port: 8762
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/ #注册中心的网址
+spring:
+  application:
+name: MyProvider

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config Version="3">
+    <Runtime>
+        <DBList>
+            <DB name="demo"> <!--数据源名称-->
+                <property name="url" value="jdbc:hsqldb:hsql://127.0.0.1/demo" ></property> <!-- url连接-->
+                <property name="driver" value="org.hsqldb.jdbcDriver" ></property> <!--数据库驱动-->
+                <property name="type" value="13" ></property> <!--数据库类型-->
+                <property name="user" value="sa" ></property> <!--用户名-->
+                <property name="password" value=""></property> <!--密码-->
+                <property name="batchSize" value="1000" ></property>
+                <property name="autoConnect" value="true" ></property><!--是否自动连接，如果设定为true，则可以直接以$开头的SQL语句来访问数据库，如果为false，则不会自动连接，使用前必须用connect(db)语句创建数据库连接-->
+                <property name="useSchema" value="false" ></property>
+                <property name="addTilde" value="false" ></property>
+                <property name="dbCharset" value="UTF-8" ></property>
+                <property name="clientCharset" value="UTF-8" ></property>
+                <property name="needTransContent" value="false" ></property>
+                <property name="needTransSentence" value="false" ></property>
+                <property name="caseSentence" value="false" ></property>
+            </DB>
+            <!--<DB name="demo"> &lt;!&ndash;数据源名称&ndash;&gt;
+                <property name="url" value="jdbc:hsqldb:hsql://120.53.241.79/demo/demo" ></property> &lt;!&ndash; url连接&ndash;&gt;
+                <property name="driver" value="org.hsqldb.jdbcDriver" ></property> &lt;!&ndash;数据库驱动&ndash;&gt;
+                <property name="type" value="13" ></property> &lt;!&ndash;数据库类型&ndash;&gt;
+                <property name="user" value="sa" ></property> &lt;!&ndash;用户名&ndash;&gt;
+                <property name="password" value=""></property> &lt;!&ndash;密码&ndash;&gt;
+                <property name="batchSize" value="1000" ></property>
+                <property name="autoConnect" value="true" ></property>&lt;!&ndash;是否自动连接，如果设定为true，则可以直接以$开头的SQL语句来访问数据库，如果为false，则不会自动连接，使用前必须用connect(db)语句创建数据库连接&ndash;&gt;
+                <property name="useSchema" value="false" ></property>
+                <property name="addTilde" value="false" ></property>
+                <property name="dbCharset" value="UTF-8" ></property>
+                <property name="clientCharset" value="UTF-8" ></property>
+                <property name="needTransContent" value="false" ></property>
+                <property name="needTransSentence" value="false" ></property>
+                <property name="caseSentence" value="false" ></property>
+            </DB>-->
+            <DB name="my_company">
+                <property name="url" value="jdbc:mysql://127.0.0.1:3306/my_company"/>
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="type" value="2"/>
+                <property name="user" value="root"/>
+                <property name="password" value="123456"/>
+                <property name="batchSize" value="0"/>
+                <property name="autoConnect" value="false"/>
+                <property name="useSchema" value="false"/>
+                <property name="addTilde" value="false"/>
+                <property name="needTransContent" value="false"/>
+                <property name="needTransSentence" value="false"/>
+                <property name="caseSentence" value="false"/>
+            </DB>
+        </DBList>
+        <Esproc>
+            <charSet>GBK</charSet>
+            <splPathList>
+                <splPath>demo</splPath>
+            </splPathList>
+            <dateFormat>yyyy-MM-dd</dateFormat>
+            <timeFormat>HH:mm:ss</timeFormat>
+            <dateTimeFormat>yyyy-MM-dd HH:mm:ss</dateTimeFormat>
+            <mainPath/>
+            <tempPath/>
+            <bufSize>65536</bufSize>
+            <localHost/>
+            <localPort>0</localPort>
+            <parallelNum/>
+            <cursorParallelNum/>
+            <blockSize/>
+            <nullStrings>nan,null,n/a</nullStrings>
+            <fetchCount/>
+            <extLibsPath/>
+            <customFunctionFile/>
+            <mainPath>/Applications/esProc.app/Contents/raqsoft/esProc/demo/</mainPath>
+            <dfxPathList>
+                <!--配置dfx文件寻址路径，该路径为绝对路径，可以设置多个路径，以“;”隔开-->
+                <dfxPath>/Applications/esProc.app/Contents/raqsoft/esProc/demo/</dfxPath>
+            </dfxPathList>
+        </Esproc>
+        <Logger>
+            <Level>INFO</Level>
+        </Logger>
+    </Runtime>
+    <JDBC>
+    </JDBC>
+</Config>
